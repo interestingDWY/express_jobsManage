@@ -7,11 +7,10 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css"/>
-	<script src="../lib/requirejs/require.js" data-main="/js/position"></script>
 	<body>
-		
+		<div class="container">
+			  
 		<header></header>
-		
 		<div class="jobManage_top">
 			<div class="col-lg-1 jobManage_title">职位管理</div>
 			<button type="button" class="jobManage_add btn btn-info" data-toggle="modal" data-target="#addJobModal">添加</button>
@@ -68,7 +67,7 @@
 			
 			
 			<div class="jobmanage_table">
-				<table border="1" bordercolor="#ccc" cellspacing="" cellpadding="">
+				<table class="jobs jobs-table" border="1" bordercolor="#ccc" cellspacing="" cellpadding="">
 					<tr>
 						<th>序号</th>
 						<th>公司Logo</th>
@@ -94,16 +93,37 @@
 					</tr>
 				</table>
 			</div>
-			
-		
-		
+		</div>
+		<!--分页-->
+		<nav aria-label="Page navigation" style="margin-left: 750px;">
+		  <ul class="pagination">
+		    <li>
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li><a href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li>
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
 		</div>
 		
-			
 		
 		
+		<script src="/../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/../lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="/../javascripts/login_Modal.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/../javascripts/register_Modal.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/../javascripts/header.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
